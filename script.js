@@ -51,7 +51,7 @@ function updateBalanceAlert() {
     const remainingBudget = totalBudget - totalExpenses;
     const alertDiv = document.getElementById("budgetAlert");
 
-    if (remainingBudget < 0.7 * totalBudget) {
+    if (remainingBudget < 0.3 * totalBudget) {
         alertDiv.textContent = "Warning: You have used your 70% of budget!";
     } else {
         alertDiv.textContent = "";
