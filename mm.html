@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+     
+    <h1>Expense Tracker</h1>
+    <label for="budget">Monthly Budget: Rs</label>
+    <input type="number" id="budget" placeholder="Enter your budget">
+    <button id="setBudget">Set Budget</button>
+    
+    <div>
+        <h2>Add Expense</h2>
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Others">Others</option>
+        </select>
+        <label for="amount">Amount (Rs):</label>
+        <input type="number" id="amount" placeholder="Enter the amount">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <button id="addExpense">Add Expense</button>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="expenseTable">
+            <!-- Expense data will be inserted here -->
+        </tbody>
+    </table>
+    
+    <div id="budgetAlert"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
